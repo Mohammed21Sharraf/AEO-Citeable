@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, IBM_Plex_Serif, IBM_Plex_Mono } from "next/font/google";
+import { CalInit } from "@/components/cal-init";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -41,7 +42,10 @@ export default function RootLayout({
       lang="en"
       className={`${plexSans.variable} ${plexSerif.variable} ${plexMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <CalInit />
+        {children}
+      </body>
     </html>
   );
 }
