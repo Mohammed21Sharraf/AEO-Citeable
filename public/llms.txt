@@ -1,0 +1,27 @@
+# Citeable
+
+> Citeable is an Answer Engine Optimisation (AEO) agency for B2B SaaS companies. We get brands cited by ChatGPT, Perplexity, Gemini, Claude, and Google AI Mode — by doing the restructuring and citation work, not by selling another monitoring dashboard.
+
+## What we do
+
+- [AI Visibility Audit](https://citeable.com/#services): 30 buyer queries run across 4 answer engines (ChatGPT, Perplexity, Gemini, Google AI Mode), a competitor citation map, an AI Visibility Score out of 100, and a 90-day execution roadmap.
+- [Content Restructuring](https://citeable.com/#services): Rewrite priority pages so AI can extract and cite them — direct-answer leads, semantic HTML, schema markup, and entity-rich phrasing tuned per engine.
+- [Citation Building](https://citeable.com/#services): Earn mentions in the sources LLMs already trust — Reddit, G2, industry publications, and primary research — without spam tactics that get brands de-ranked.
+
+## How we work
+
+- [Process](https://citeable.com/#process): Four steps — Audit, Restructure, Cite, Measure. Each engagement runs on a 90-day execution loop, not an open-ended retainer.
+- [Compare](https://citeable.com/#compare): The wedge versus monitoring tools. Dashboards show the gap; we close it. Rows compare ownership of strategy, content, citations, measurement, and execution.
+
+## Tools
+
+- [Invisibility Tax Calculator](https://citeable.com/#calculator): Interactive calculator that estimates monthly revenue at risk based on average contract value, inbound deals, share of buyers consulting AI, and your current citation rate versus a 40% top-competitor benchmark.
+
+## Frequently asked
+
+- [FAQ](https://citeable.com/#faq): Six answers — SEO vs AEO, how AEO is measured, why AEO matters now (post-May-2024 Google AI Overviews), guarantees, implementation handoff, and Reddit-citation safety.
+
+## Contact
+
+- [Book a call](https://cal.com/sbusiness-kvxqhq): 30-minute intro on Cal.com with a Google Meet link delivered in the calendar invite.
+- Email: s.business.uddin@gmail.com
