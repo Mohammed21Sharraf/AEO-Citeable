@@ -32,10 +32,7 @@ export function Compare() {
       <div className="mx-auto max-w-6xl px-6 py-28 sm:py-36">
         <div className="mb-14 max-w-2xl">
           <span className="section-accent" />
-          <p className="eyebrow w-fit">
-            <span className="dot" />
-            Monitoring vs. execution
-          </p>
+          <p className="eyebrow w-fit">Monitoring vs. execution</p>
           <h2 className="mt-5 font-display text-[44px] leading-[1.04] tracking-[-0.02em] text-[color:var(--ink)] sm:text-[60px]">
             Dashboards show the gap.
             <br />
@@ -47,10 +44,7 @@ export function Compare() {
           <div className="grid grid-cols-12 bg-[color:var(--surface-2)] px-6 py-4 text-[11px] font-mono uppercase tracking-[0.14em] text-[color:var(--ink-subtle)]">
             <div className="col-span-4">Dimension</div>
             <div className="col-span-4">Monitoring-only vendors</div>
-            <div className="col-span-4 flex items-center gap-2">
-              <CiteableMark />
-              Citeable
-            </div>
+            <div className="col-span-4 text-[color:var(--ink)]">Citeable</div>
           </div>
 
           {rows.map((r, i) => (
@@ -91,7 +85,7 @@ function CheckIcon() {
     >
       <path
         d="M4.5 12.5l4.5 4.5L19.5 6"
-        stroke="#0A0B0F"
+        stroke="#ebedf2"
         strokeWidth="1.75"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -100,15 +94,3 @@ function CheckIcon() {
   );
 }
 
-function CiteableMark() {
-  return (
-    <span
-      aria-hidden
-      className="inline-block h-4 w-4 rounded-[4px] border border-[color:var(--border-strong)]"
-      style={{
-        background:
-          "linear-gradient(145deg, #ffffff 0%, #d0d4db 50%, #8a8f99 100%)",
-      }}
-    />
-  );
-}

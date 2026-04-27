@@ -5,10 +5,7 @@ export function Shift() {
         <div className="grid gap-14 md:grid-cols-12 md:gap-10">
           <div className="md:col-span-5">
             <span className="section-accent" />
-            <p className="eyebrow w-fit">
-              <span className="dot" />
-              The shift
-            </p>
+            <p className="eyebrow w-fit">The shift</p>
             <h2 className="mt-5 font-display text-[44px] leading-[1.04] tracking-[-0.02em] text-[color:var(--ink)] sm:text-[60px]">
               SEO taught buyers to ask Google.
               <br />

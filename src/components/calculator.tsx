@@ -38,10 +38,7 @@ export function Calculator() {
       <div className="mx-auto max-w-6xl px-6 py-28 sm:py-36">
         <div className="mb-14 max-w-2xl">
           <span className="section-accent" />
-          <p className="eyebrow w-fit">
-            <span className="dot" />
-            The invisibility tax
-          </p>
+          <p className="eyebrow w-fit">The invisibility tax</p>
           <h2 className="mt-5 font-display text-[44px] leading-[1.04] tracking-[-0.02em] text-[color:var(--ink)] sm:text-[60px]">
             Calculate the pipeline <span className="italic silver-text">quietly walking</span> to cited competitors.
           </h2>
@@ -122,7 +119,9 @@ export function Calculator() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="mailto:s.business.uddin@gmail.com?subject=Book%20a%20call%20with%20Citeable"
+                href="https://cal.com/sbusiness-kvxqhq"
+                data-cal-link="sbusiness-kvxqhq"
+                data-cal-config='{"theme":"dark"}'
                 className="btn-primary flex-1"
               >
                 Book a call
@@ -215,35 +214,37 @@ function Output({
       className={[
         "rounded-[var(--radius-lg)] p-6",
         highlight
-          ? "border border-[color:var(--border-strong)] bg-[color:var(--ink)] text-[#f7f8fa]"
+          ? "silver-surface relative overflow-hidden"
           : accent
           ? "silver-surface"
           : "border border-[color:var(--border)] bg-[color:var(--surface)]",
       ].join(" ")}
     >
-      <p
-        className={[
-          "font-mono text-[11px] uppercase tracking-[0.14em]",
-          highlight ? "text-[#b9bcc3]" : "text-[color:var(--ink-subtle)]",
-        ].join(" ")}
-      >
+      {highlight && (
+        <span
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 h-px"
+          style={{
+            background:
+              "linear-gradient(90deg, transparent, rgba(235,237,242,0.55), transparent)",
+          }}
+        />
+      )}
+      <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-[color:var(--ink-subtle)]">
         {kpiLabel}
       </p>
       <p
         className={[
           "mt-3 font-display leading-none tracking-tight",
-          highlight ? "text-[44px] sm:text-[52px]" : "text-[34px] sm:text-[40px]",
+          highlight
+            ? "silver-text text-[44px] sm:text-[52px]"
+            : "text-[color:var(--ink)] text-[34px] sm:text-[40px]",
         ].join(" ")}
       >
         {value}
       </p>
       {foot && (
-        <p
-          className={[
-            "mt-3 text-[12.5px] leading-snug",
-            highlight ? "text-[#b9bcc3]" : "text-[color:var(--ink-muted)]",
-          ].join(" ")}
-        >
+        <p className="mt-3 text-[12.5px] leading-snug text-[color:var(--ink-muted)]">
           {foot}
         </p>
       )}

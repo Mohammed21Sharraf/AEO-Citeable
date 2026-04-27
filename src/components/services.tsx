@@ -3,7 +3,7 @@ export function Services() {
     {
       index: "01",
       title: "AI Visibility Audit",
-      price: "from $500",
+      price: "Diagnostic engagement",
       summary:
         "30 buyer-intent queries, run across 4 platforms, mapped against your top competitors.",
       deliverables: [
@@ -94,12 +94,7 @@ export function Services() {
                   >
                     <span
                       aria-hidden
-                      className="mt-[7px] h-[6px] w-[6px] flex-none rounded-full"
-                      style={{
-                        background:
-                          "linear-gradient(180deg, #ffffff 0%, #a7acb6 100%)",
-                        boxShadow: "0 0 0 1px rgba(10,11,15,0.12)",
-                      }}
+                      className="mt-[10px] h-px w-3 flex-none bg-[color:var(--silver-4)]"
                     />
                     <span>{d}</span>
                   </li>

@@ -3,14 +3,22 @@ import Link from "next/link";
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[600px]">
-        {/* Large metallic arc */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[680px]">
+        {/* Large silver glow on dark canvas */}
         <div
           aria-hidden
-          className="absolute left-1/2 top-[-280px] h-[720px] w-[1100px] -translate-x-1/2 rounded-full opacity-70 blur-3xl"
+          className="absolute left-1/2 top-[-260px] h-[720px] w-[1100px] -translate-x-1/2 rounded-full opacity-[0.35] blur-3xl"
           style={{
             background:
-              "conic-gradient(from 210deg at 50% 50%, #ffffff, #cbd0d9, #9aa0ab, #ffffff, #d8dce3, #ffffff)",
+              "radial-gradient(closest-side, #d8dce3 0%, #6c7180 40%, transparent 75%)",
+          }}
+        />
+        <div
+          aria-hidden
+          className="absolute left-1/2 top-[-200px] h-[480px] w-[820px] -translate-x-1/2 rounded-full opacity-[0.18] blur-2xl"
+          style={{
+            background:
+              "conic-gradient(from 210deg at 50% 50%, rgba(235,237,242,0.0), rgba(235,237,242,0.6), rgba(140,150,170,0.4), rgba(235,237,242,0.6), rgba(235,237,242,0.0))",
           }}
         />
       </div>
@@ -18,7 +26,6 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-6 pt-24 pb-28 sm:pt-32 sm:pb-36">
         <div className="flex flex-col items-center text-center">
           <span className="eyebrow rise rise-1">
-            <span className="dot" />
             AEO · Answer Engine Optimisation
           </span>
 
@@ -37,8 +44,13 @@ export function Hero() {
           </p>
 
           <div className="rise rise-4 mt-9 flex flex-col items-center gap-3 sm:flex-row">
-            <Link href="#audit" className="btn-primary">
-              Get your free AI Visibility Score
+            <Link
+              href="https://cal.com/sbusiness-kvxqhq"
+              data-cal-link="sbusiness-kvxqhq"
+              data-cal-config='{"theme":"dark"}'
+              className="btn-primary"
+            >
+              Book a call
               <ArrowIcon />
             </Link>
             <Link href="#process" className="btn-ghost">
@@ -47,7 +59,7 @@ export function Hero() {
           </div>
 
           <p className="rise rise-5 mt-5 font-mono text-[11px] uppercase tracking-[0.14em] text-[color:var(--ink-subtle)]">
-            Limited to 3 free audits · No credit card · Delivered in 48 hours
+            4 engines · 30 queries · 90-day execution roadmap
           </p>
         </div>
 

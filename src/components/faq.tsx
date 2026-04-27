@@ -32,10 +32,7 @@ export function Faq() {
         <div className="grid gap-14 md:grid-cols-12">
           <div className="md:col-span-4">
             <span className="section-accent" />
-            <p className="eyebrow w-fit">
-              <span className="dot" />
-              FAQ
-            </p>
+            <p className="eyebrow w-fit">FAQ</p>
             <h2 className="mt-5 font-display text-[44px] leading-[1.04] tracking-[-0.02em] text-[color:var(--ink)] sm:text-[56px]">
               Questions
               <br />

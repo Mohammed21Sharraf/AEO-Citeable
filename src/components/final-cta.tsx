@@ -8,24 +8,21 @@ export function FinalCta() {
           className="relative overflow-hidden rounded-[28px] border border-[color:var(--border-strong)] px-8 py-16 sm:px-16 sm:py-24"
           style={{
             background:
-              "radial-gradient(800px 400px at 20% 10%, #ffffff, transparent 60%), radial-gradient(900px 500px at 90% 90%, #cfd3da, transparent 60%), linear-gradient(180deg, #eef0f3, #dfe3e9)",
+              "radial-gradient(800px 400px at 20% 10%, rgba(220,226,236,0.18), transparent 60%), radial-gradient(900px 500px at 90% 90%, rgba(140,150,170,0.22), transparent 60%), linear-gradient(180deg, #0d0f14, #07080b)",
           }}
         >
           <div
             aria-hidden
-            className="absolute inset-0 opacity-[0.18]"
+            className="absolute inset-0 opacity-[0.10]"
             style={{
               backgroundImage:
-                "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.7 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>\")",
-              mixBlendMode: "multiply",
+                "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.5'/></svg>\")",
+              mixBlendMode: "overlay",
             }}
           />
 
           <div className="relative max-w-3xl">
-            <p className="eyebrow w-fit">
-              <span className="dot" />
-              Your move
-            </p>
+            <p className="eyebrow w-fit">Your move</p>
 
             <h2 className="mt-6 font-display text-[52px] leading-[1.02] tracking-[-0.02em] text-[color:var(--ink)] sm:text-[76px]">
               Stop being invisible.
@@ -41,7 +38,9 @@ export function FinalCta() {
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="mailto:s.business.uddin@gmail.com?subject=Book%20a%20call%20with%20Citeable"
+                href="https://cal.com/sbusiness-kvxqhq"
+                data-cal-link="sbusiness-kvxqhq"
+                data-cal-config='{"theme":"dark"}'
                 className="btn-primary"
               >
                 Book a call
@@ -53,7 +52,7 @@ export function FinalCta() {
             </div>
 
             <p className="mt-5 font-mono text-[11px] uppercase tracking-[0.14em] text-[color:var(--ink-subtle)]">
-              Three free audit slots open this month.
+              Direct intro · Reply within one business day.
             </p>
           </div>
         </div>

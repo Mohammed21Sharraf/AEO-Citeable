@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CiteableLogo } from "@/components/logo";
 
 export function Nav() {
   return (
@@ -6,7 +7,7 @@ export function Nav() {
       <div className="mx-auto max-w-6xl px-6 pt-4">
         <nav
           aria-label="Primary"
-          className="flex items-center justify-between gap-6 rounded-full border border-[color:var(--border)] bg-[rgba(251,252,253,0.72)] px-4 py-2 backdrop-blur-xl shadow-[var(--shadow-sm)]"
+          className="flex items-center justify-between gap-6 rounded-full border border-[color:var(--border)] bg-[rgba(14,16,21,0.72)] px-4 py-2 backdrop-blur-xl shadow-[var(--shadow-sm)]"
         >
           <Link href="/" className="flex items-center gap-2 pl-2">
             <LogoMark />
@@ -24,8 +25,10 @@ export function Nav() {
           </ul>
 
           <Link
-            href="mailto:s.business.uddin@gmail.com?subject=Book%20a%20call%20with%20Citeable"
-            className="btn-primary !h-10 !px-4 text-sm"
+            href="https://cal.com/sbusiness-kvxqhq"
+            data-cal-link="sbusiness-kvxqhq"
+            data-cal-config='{"theme":"dark"}'
+            className="btn-primary !h-10 !px-4 text-[13px]"
           >
             Book a call
             <ArrowIcon />
@@ -50,28 +53,7 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
 }
 
 function LogoMark() {
-  return (
-    <span
-      aria-hidden
-      className="relative grid h-8 w-8 place-items-center overflow-hidden rounded-[10px] border border-[color:var(--border-strong)]"
-      style={{
-        background:
-          "linear-gradient(145deg, #ffffff 0%, #e0e4ea 40%, #9aa0ab 75%, #e6e9ee 100%)",
-        boxShadow:
-          "inset 0 1px 0 rgba(255,255,255,0.8), inset 0 -1px 0 rgba(0,0,0,0.08)",
-      }}
-    >
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden>
-        <path
-          d="M7 14.5c0-4.14 3.36-7.5 7.5-7.5M7 9.5c0 4.14 3.36 7.5 7.5 7.5"
-          stroke="#0A0B0F"
-          strokeWidth="1.75"
-          strokeLinecap="round"
-        />
-        <circle cx="17.5" cy="7" r="1.6" fill="#0A0B0F" />
-      </svg>
-    </span>
-  );
+  return <CiteableLogo size={28} />;
 }
 
 function ArrowIcon() {

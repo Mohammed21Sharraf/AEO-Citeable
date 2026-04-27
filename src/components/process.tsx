@@ -31,10 +31,7 @@ export function Process() {
       <div className="mx-auto max-w-6xl px-6 py-28 sm:py-36">
         <div className="mb-16 max-w-2xl">
           <span className="section-accent" />
-          <p className="eyebrow w-fit">
-            <span className="dot" />
-            How we work
-          </p>
+          <p className="eyebrow w-fit">How we work</p>
           <h2 className="mt-5 font-display text-[44px] leading-[1.04] tracking-[-0.02em] text-[color:var(--ink)] sm:text-[60px]">
             From invisible to <span className="italic silver-text">cited</span>{" "}
             in 90 days.
@@ -51,16 +48,6 @@ export function Process() {
                 borderBottom: "1px solid var(--border)",
               }}
             >
-              <div
-                aria-hidden
-                className="absolute left-[-6px] top-10 hidden h-3 w-3 rounded-full sm:block"
-                style={{
-                  background:
-                    "linear-gradient(180deg, #ffffff 0%, #a7acb6 100%)",
-                  boxShadow:
-                    "0 0 0 4px var(--bg), 0 0 0 5px var(--border-strong)",
-                }}
-              />
               <div className="sm:col-span-3">
                 <div className="flex items-baseline gap-3">
                   <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[color:var(--ink-subtle)]">
