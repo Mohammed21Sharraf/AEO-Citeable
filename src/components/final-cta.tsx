@@ -40,12 +40,15 @@ export function FinalCta() {
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href="#" className="btn-primary">
-                Get your AI Visibility Score
+              <Link
+                href="mailto:s.business.uddin@gmail.com?subject=Book%20a%20call%20with%20Citeable"
+                className="btn-primary"
+              >
+                Book a call
                 <ArrowIcon />
               </Link>
-              <Link href="#pricing" className="btn-ghost">
-                See pricing
+              <Link href="#calculator" className="btn-ghost">
+                Calculate your tax first
               </Link>
             </div>
 

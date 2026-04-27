@@ -48,9 +48,9 @@
   --color-border: var(--border);
   --color-border-strong: var(--border-strong);
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-display: var(--font-instrument-serif);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+  --font-display: var(--font-plex-serif);
 }
 
 html,
@@ -61,9 +61,17 @@ body {
 
 body {
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-  font-feature-settings: "ss01", "cv11";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-weight: 400;
+}
+
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
 }
 
 /* Ambient mesh gradient background for the whole page */
@@ -325,4 +333,76 @@ details.faq-item .answer {
 ::selection {
   background: var(--ink);
   color: var(--bg);
+}
+
+/* Silver-track range slider (used in the Calculator) */
+.citeable-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 36px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.citeable-range::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, #0a0b0f 0%, #0a0b0f var(--fill, 0%), rgba(10, 11, 15, 0.12) var(--fill, 0%), rgba(10, 11, 15, 0.12) 100%);
+  border: 1px solid var(--border);
+}
+
+.citeable-range::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(10, 11, 15, 0.12);
+  border: 1px solid var(--border);
+}
+
+.citeable-range::-moz-range-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: #0a0b0f;
+}
+
+.citeable-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -8px;
+  border-radius: 999px;
+  background: linear-gradient(145deg, #ffffff 0%, #d0d4db 55%, #8a8f99 100%);
+  border: 1px solid var(--border-strong);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 1px 2px rgba(10, 11, 15, 0.25),
+    0 4px 12px -2px rgba(10, 11, 15, 0.18);
+  transition: transform 120ms ease;
+}
+.citeable-range::-webkit-slider-thumb:hover {
+  transform: scale(1.06);
+}
+
+.citeable-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: linear-gradient(145deg, #ffffff 0%, #d0d4db 55%, #8a8f99 100%);
+  border: 1px solid var(--border-strong);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 1px 2px rgba(10, 11, 15, 0.25),
+    0 4px 12px -2px rgba(10, 11, 15, 0.18);
+}
+
+.citeable-range:focus-visible {
+  outline: none;
+}
+.citeable-range:focus-visible::-webkit-slider-thumb {
+  box-shadow:
+    0 0 0 4px rgba(10, 11, 15, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 1px 2px rgba(10, 11, 15, 0.25);
 }

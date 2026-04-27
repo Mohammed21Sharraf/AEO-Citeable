@@ -5,7 +5,7 @@ import { Shift } from "@/components/shift";
 import { Services } from "@/components/services";
 import { Process } from "@/components/process";
 import { Compare } from "@/components/compare";
-import { Pricing } from "@/components/pricing";
+import { Calculator } from "@/components/calculator";
 import { Faq } from "@/components/faq";
 import { FinalCta } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
@@ -21,7 +21,7 @@ export default function Home() {
         <Services />
         <Process />
         <Compare />
-        <Pricing />
+        <Calculator />
         <Faq />
         <FinalCta />
       </main>

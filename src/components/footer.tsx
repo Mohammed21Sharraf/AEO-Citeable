@@ -33,15 +33,21 @@ export function Footer() {
               links={[
                 { label: "Process", href: "#process" },
                 { label: "Compare", href: "#compare" },
-                { label: "Pricing", href: "#pricing" },
+                { label: "Calculator", href: "#calculator" },
                 { label: "FAQ", href: "#faq" },
               ]}
             />
             <FootCol
               title="Contact"
               links={[
-                { label: "syed@eduintbd.com", href: "mailto:syed@eduintbd.com" },
-                { label: "Book a call", href: "#audit" },
+                {
+                  label: "s.business.uddin@gmail.com",
+                  href: "mailto:s.business.uddin@gmail.com",
+                },
+                {
+                  label: "Book a call",
+                  href: "mailto:s.business.uddin@gmail.com?subject=Book%20a%20call%20with%20Citeable",
+                },
               ]}
             />
           </div>

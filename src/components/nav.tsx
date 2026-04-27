@@ -19,12 +19,15 @@ export function Nav() {
             <NavLink href="#services">Services</NavLink>
             <NavLink href="#process">Process</NavLink>
             <NavLink href="#compare">Compare</NavLink>
-            <NavLink href="#pricing">Pricing</NavLink>
+            <NavLink href="#calculator">Calculator</NavLink>
             <NavLink href="#faq">FAQ</NavLink>
           </ul>
 
-          <Link href="#audit" className="btn-primary !h-10 !px-4 text-sm">
-            Get your AI Visibility Score
+          <Link
+            href="mailto:s.business.uddin@gmail.com?subject=Book%20a%20call%20with%20Citeable"
+            className="btn-primary !h-10 !px-4 text-sm"
+          >
+            Book a call
             <ArrowIcon />
           </Link>
         </nav>
