@@ -1,5 +1,4 @@
-export function Process() {
-  const steps = [
+export const processSteps = [
     {
       num: "01",
       title: "Audit",
@@ -24,7 +23,10 @@ export function Process() {
       duration: "Every month",
       body: "We re-run the 30 queries and compare citation rate to the baseline. You see exactly which queries now name you — and which competitors you displaced.",
     },
-  ];
+] as const;
+
+export function Process() {
+  const steps = processSteps;
 
   return (
     <section id="process" className="relative">

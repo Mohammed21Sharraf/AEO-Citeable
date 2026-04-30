@@ -1,5 +1,4 @@
-export function Services() {
-  const services = [
+export const services = [
     {
       index: "01",
       title: "AI Visibility Audit",
@@ -39,8 +38,9 @@ export function Services() {
         "Monthly citation-rate review vs. baseline",
       ],
     },
-  ];
+] as const;
 
+export function Services() {
   return (
     <section id="services" className="relative">
       <div className="mx-auto max-w-6xl px-6 py-28 sm:py-36">

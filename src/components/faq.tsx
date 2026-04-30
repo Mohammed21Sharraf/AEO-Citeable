@@ -1,5 +1,4 @@
-export function Faq() {
-  const items = [
+export const faqItems = [
     {
       q: "How is this different from an SEO agency?",
       a: "Traditional SEO optimises for Google's ranked results. AEO optimises for AI-generated answers — the text ChatGPT, Perplexity, Gemini, and Google AI produce when a buyer asks for a recommendation. Same destination (buyers finding you), different mechanics. We're not a replacement for SEO; we're what your SEO agency isn't doing.",
@@ -24,7 +23,10 @@ export function Faq() {
       q: "Is Reddit seeding allowed? I don't want to get our brand burned.",
       a: "We only post from accounts with genuine karma and comment history, we reply to threads where our client is a legitimate recommendation, and we always mention at least one competitor so the comment reads as real advice. Brand-safe by construction — the whole tactic breaks the moment it reads as promotional.",
     },
-  ];
+] as const;
+
+export function Faq() {
+  const items = faqItems;
 
   return (
     <section id="faq" className="relative">
